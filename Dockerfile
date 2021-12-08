@@ -8,7 +8,7 @@ RUN apk add --update --no-cache alpine-sdk autoconf automake build-base clang cm
     cd libxlsxwriter && make -j && make install && \
     cd .. && rm -rf libxlsxwriter && \
     git clone https://github.com/rgamble/libcsv.git && \
-    cd libcsv && sed -i s/1.14/1.16/g configure && ./configure && make -j && make install && \
+    cd libcsv && autoreconf -f -i && ./configure && make -j && make install && \
     cd .. && rm -rf libcsv && \
     git clone https://github.com/WizardMac/ReadStat.git && \
     cd ReadStat && ./autogen.sh && ./configure && make -j && make install && \
