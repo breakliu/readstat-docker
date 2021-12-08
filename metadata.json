@@ -1,0 +1,40 @@
+{
+  "type": "SPSS",
+  "variables": [
+    {
+      "type": "STRING",
+      "name": "nickname",
+      "label": "nickname of guy"
+    },
+    {
+      "type": "NUMERIC",
+      "name": "citizenship",
+      "label": "Citizenship of respondent",
+      "categories": [
+        {
+          "code": 1,
+          "label": "Afghanistan"
+        },
+        {
+          "code": 2,
+          "label": "Albania"
+        },
+        {
+          "code": 98,
+          "label": "No answer"
+        },
+        {
+          "code": 99,
+          "label": "Not applicable"
+        }
+      ],
+      "missing": {
+        "type": "DISCRETE",
+        "values": [
+          98,
+          99
+        ]
+      }
+    }
+  ]
+}

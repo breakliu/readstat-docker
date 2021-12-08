@@ -1,3 +1,8 @@
+# Update
+* alpine 3.15
+* libcsv support
+* fixed docker build issue
+
 # What is this?
 
 Evan Miller wrote a library and command line tool called 
@@ -22,7 +27,9 @@ sudo chmod a+x /usr/local/bin/readstat-docker
 Then, to use it, do,
 
 ```sh
-readstat-docker input.dta output.csv
+./readstat-docker input.dta output.csv
+
+./readstat-docker -f test.csv metadata.json test.sav
 ```
 
 P.S. I <3 Evan Miller.
